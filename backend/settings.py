@@ -32,7 +32,6 @@ ALLOWED_HOSTS = [
     'localhost',
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'staffview',
+    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -122,13 +124,13 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 # /data/web/static
 STATIC_ROOT = DATA_DIR / 'static'
 
 # Media files
 # /data/web/media
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = DATA_DIR / 'media'
 
 # Default primary key field type

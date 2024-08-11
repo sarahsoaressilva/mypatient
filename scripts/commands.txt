@@ -3,3 +3,13 @@ docker-compose run --rm mypatient python manage.py createsuperuser
 
 # Create django app
 docker-compose run --rm mypatient python manage.py startapp staffview
+
+docker-compose run mypatient python -V
+docker-compose run --rm mypatient python -V
+docker-compose run --rm mypatient /bin/sh -c 'echo $SECRET_KEY'
+
+docker exec -it mypatient /bin/sh
+
+docker-compose run --rm mypatient python manage.py tailwind init
+
+

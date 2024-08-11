@@ -14,7 +14,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Copia a pasta "djangoapp" e "scripts" para dentro do container.
-COPY backend /backend
+# COPY backend /backend
 COPY scripts /scripts
 COPY ./requirements.txt .
 
@@ -40,6 +40,7 @@ RUN adduser --disabled-password --no-create-home duser && \
   chmod -R 755 /data/web/static && \
   chmod -R 755 /data/web/media && \
   chmod -R +x /scripts
+
 
 # Adiciona a pasta scripts e venv/bin 
 # no $PATH do container.
