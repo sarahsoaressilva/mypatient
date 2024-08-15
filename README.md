@@ -8,8 +8,8 @@ Este repositório tem toda a documentação do processo de criação, arquitetur
 
 ## Atualizações
 
- - 05/07/23 | Começo do projeto e da documentação. 
- - 
+ - 05/07/24 | Começo do projeto e da documentação. 
+ - 05/08/24 | Criação do módulo administrativo de funcionários(as) e médicos(as) 
 
 
 ## Sobre o que é esse projeto? O que é o My Patient?
